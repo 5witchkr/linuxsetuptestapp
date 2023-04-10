@@ -8,20 +8,20 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController {
 
-    private final TestRepository testRepository;
-
-    public TestController(TestRepository testRepository) {
-        this.testRepository = testRepository;
-    }
+//    private final TestRepository testRepository;
+//
+//    public TestController(TestRepository testRepository) {
+//        this.testRepository = testRepository;
+//    }
 
     @GetMapping("/test")
     public String gettest(){
        return "SETSETSETETTETETE";
     }
 
-    @PostMapping("/test")
-    public String posttest(){
-        testRepository.save(new TestEntity("cosjdfsfd"));
-        return "TESTTESTTEST!!!";
-    }
+//    @PostMapping("/test")
+//    public String posttest(){
+//        testRepository.save(new TestEntity("cosjdfsfd"));
+//        return "TESTTESTTEST!!!";
+//    }
 }
