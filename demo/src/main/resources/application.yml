@@ -2,6 +2,11 @@
 spring:
 server:
   port: 7171
+  ssl:
+    certificate-private-key: "classpath:key.pem"
+    certificate: "classpath:cert.pem"
+
+
 #  datasource:
 #    driver-class-name: com.mysql.cj.jdbc.Driver
 #    url: jdbc:mysql://localhost:3306/testdb?useSSL=false&serverTimezone=UTC&characterEncoding=UTF-8&allowPublicKeyRetrieval=true
